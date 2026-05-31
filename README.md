@@ -1,4 +1,4 @@
-<img width="981" height="1237" alt="image" src="https://github.com/user-attachments/assets/fe676421-93b0-40f9-8063-19ee8e020d65" /># AXI4 SPI / I2C 설계 및 검증
+# AXI4 SPI / I2C 설계 및 검증
 
 > MicroBlaze 기반 SoC에서 AXI4-Lite 프로토콜로 통신하는 SPI / I2C Master IP 설계 및 검증 (Verilog, C)
 
