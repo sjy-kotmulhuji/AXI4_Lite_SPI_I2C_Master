@@ -54,7 +54,8 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 | B | Destination → **READY** 생성 | Source → **VALID** 생성 |
 
 **FSM**
-<img width="1013" height="1311" alt="image" src="https://github.com/user-attachments/assets/b02d9101-8981-4015-b0a1-a01c8d8be588" />
+
+<img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/b02d9101-8981-4015-b0a1-a01c8d8be588" />
 
 
 ### AXI Master Read Transaction
@@ -65,13 +66,14 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 | R | Destination → **READY** 생성 | Source → **VALID** 생성 |
 
 **FSM**
-<img width="1125" height="1090" alt="image" src="https://github.com/user-attachments/assets/c332d15a-abe9-467b-81f5-c07080a0f553" />
+
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/c332d15a-abe9-467b-81f5-c07080a0f553" />
 
 ### AXI Slave Write Transaction
-<img width="981" height="1237" alt="image" src="https://github.com/user-attachments/assets/52049aca-5a18-46a7-b9b4-9b5b19915847" />
+<img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/52049aca-5a18-46a7-b9b4-9b5b19915847" />
 
 ### AXI Slave Read Transaction
-<img width="1069" height="957" alt="image" src="https://github.com/user-attachments/assets/44b2d7ed-bec1-4725-a54d-5fb67f082bb3" />
+<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/44b2d7ed-bec1-4725-a54d-5fb67f082bb3" />
 
 
 ---
