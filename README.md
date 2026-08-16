@@ -38,16 +38,22 @@
 ## AXI (Advanced eXtensible Interface)
 
 ### 개요
+| AXI Protocol | 
+| ------ |
+| <img width="1118" height="215" alt="image" src="https://github.com/user-attachments/assets/b5cb0580-2521-4390-909b-076a06fd1b5d" /> |
 
-AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고속 통신을 위한 표준 인터페이스입니다.
-
+- AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고속 통신을 위한 표준 인터페이스
 - 동작에 따라 **5개의 채널**로 구성
-- 각 채널은 Info + **VALID / READY** 핸드셰이크 신호로 구성
+- 각 채널은 Info + **VALID / READY** 신호로 구성
 - **AXI4-Lite** : AXI4의 경량화 버전, 단일 트랜잭션만 처리
+
+---
 
 ### 채널 구성
 
 <img width="1772" height="1001" alt="image" src="https://github.com/user-attachments/assets/47a46793-0e3e-47a0-88ae-74c602b72790" />
+
+- **Handshaking** 방식 : 각 채널의 **VALID와 READY가 모두 1**이 되는 클락 엣지에서 해당 채널의 트랜잭션 완료
 
 | 채널 | 방향 | 설명 |
 |------|------|------|
@@ -57,9 +63,11 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 | `AR` | Master → Slave | Read Address |
 | `R` | Slave → Master | Read Data & Response |
 
-> 각 채널의 **VALID와 READY가 동시에 1**이 되는 클락 엣지에서 해당 채널의 트랜잭션이 완료됩니다.
+---
 
-### AXI Master Write Transaction
+### AXI Master 
+
+#### Write Transaction
 
 | 채널 | Master 역할 | Slave 역할 |
 |------|------------|-----------|
@@ -70,8 +78,9 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 <img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/b02d9101-8981-4015-b0a1-a01c8d8be588" />
 
+---
 
-### AXI Master Read Transaction
+#### Read Transaction
 
 | 채널 | Master 역할 | Slave 역할 |
 |------|------------|-----------|
@@ -82,8 +91,12 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/c332d15a-abe9-467b-81f5-c07080a0f553" />
 
+---
+
 ### AXI Slave Write Transaction
 <img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/52049aca-5a18-46a7-b9b4-9b5b19915847" />
+
+---
 
 ### AXI Slave Read Transaction
 <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/44b2d7ed-bec1-4725-a54d-5fb67f082bb3" />
