@@ -111,6 +111,19 @@
 - SPI Master
 - I2C Master
 
+## AXI SPI IP
+
+### 블록도 및 레지스터 구성
+
+| Block Diagram | 레지스터 주소 맵핑 |
+|------|------|
+| <img width="2955" height="1082" alt="image" src="https://github.com/user-attachments/assets/71e1e5f8-c294-40b6-b36f-14512f3c2f29" /> | <img width="725" height="534" alt="image" src="https://github.com/user-attachments/assets/917e4d55-fa0c-44eb-9dfb-8bc32a2525a5" /> | 
+
+### SoC 구성
+<img width="1810" height="811" alt="image" src="https://github.com/user-attachments/assets/87ecaa18-90a4-4f79-8788-651ca4436e6b" />
+
+
+
 ### GPIO 구성
 
 | 포트 | 연결 |
