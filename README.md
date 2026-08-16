@@ -69,37 +69,28 @@
 
 #### Write Transaction
 
-| 채널 | Master 역할 | Slave 역할 |
-|------|------------|-----------|
-| AW, W | Source → **VALID** 생성 | Destination → **READY** 생성 |
-| B | Destination → **READY** 생성 | Source → **VALID** 생성 |
+| Timing Diagram | FSM |
+| ------ | ------ |
+| <img width="900" height="496" alt="image" src="https://github.com/user-attachments/assets/3a0368a7-5567-49df-af69-80b60c66666f" /> | <img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/b02d9101-8981-4015-b0a1-a01c8d8be588" /> |
 
-**FSM**
 
-<img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/b02d9101-8981-4015-b0a1-a01c8d8be588" />
-
----
 
 #### Read Transaction
 
-| 채널 | Master 역할 | Slave 역할 |
-|------|------------|-----------|
-| AR | Source → **VALID** 생성 | Destination → **READY** 생성 |
-| R | Destination → **READY** 생성 | Source → **VALID** 생성 |
-
-**FSM**
-
-<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/c332d15a-abe9-467b-81f5-c07080a0f553" />
+| Timing Diagram | FSM |
+| ------ | ------ |
+| <img width="1630" height="656" alt="image" src="https://github.com/user-attachments/assets/332f8e5b-6c2f-47ec-a308-c3d38ce0391d" />| <img width="925" height="890" alt="image" src="https://github.com/user-attachments/assets/f3a7552e-7ff0-4a5d-9ff4-942fbf3f2a34" />|
 
 ---
 
-### AXI Slave Write Transaction
-<img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/52049aca-5a18-46a7-b9b4-9b5b19915847" />
+### AXI Slave 
 
----
+#### Write/Read Transaction
 
-### AXI Slave Read Transaction
-<img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/44b2d7ed-bec1-4725-a54d-5fb67f082bb3" />
+| Write FSM | Read FSM |
+| ------ | ------ |
+| <img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/52049aca-5a18-46a7-b9b4-9b5b19915847" /> | <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/44b2d7ed-bec1-4725-a54d-5fb67f082bb3" /> |
+
 
 
 ---
