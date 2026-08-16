@@ -1,10 +1,10 @@
-# AXI4-Lite 기반 SoC 설계 및 UVM 검증
+# 🚌 AXI4-Lite 기반 SoC 설계 및 UVM 검증
 
 > 온디바이스AI 시스템 반도체 설계 1기 | 송주연 | 대한상공회의소 서울기술교육센터 | 2026.05.08
 
 ---
 
-## 📌 프로젝트 개요
+## 프로젝트 개요
 
 - MicroBlaze 기반 **SoC 시스템** 구성 (Vivado Block Design)
 - MicroBlaze CPU와 **AXI4-Lite** 프로토콜로 통신하는 **SPI Master / I2C Master IP** 설계
@@ -14,7 +14,7 @@
 
 ---
 
-## 🛠️ 개발 환경
+## 개발 환경
 
 <table>
 <tr><td><b>Language</b></td><td>
@@ -35,7 +35,7 @@
 
 ---
 
-## 🚌 AXI (Advanced eXtensible Interface)
+## AXI (Advanced eXtensible Interface)
 
 ### 개요
 
@@ -91,7 +91,7 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 ---
 
-## 🧱 SoC 구성
+## SoC 구성
 
 ### IP 구성
 
@@ -119,7 +119,7 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 ---
 
-## ⚙️ Software 설계
+## Software 설계
 
 ### HAL 기반 Layered Architecture
 
@@ -137,7 +137,7 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 ---
 
-## 📡 AXI SPI
+## AXI SPI
 
 ### Block Diagram
 
@@ -151,7 +151,7 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 ---
 
-## 🔗 AXI I2C
+## AXI I2C
 
 ### Block Diagram
 
@@ -165,7 +165,7 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 ---
 
-## ✅ AXI SPI UVM 검증
+## AXI SPI UVM 검증
 
 ### 검증 시나리오
 
@@ -185,7 +185,7 @@ AMBA Bus 프로토콜 중 하나로 SoC 내부에서 CPU와 주변장치 간 고
 
 ---
 
-## 🐛 Trouble Shooting
+## Trouble Shooting
 
 ### I2C Master IP Port 설정 오류
 
