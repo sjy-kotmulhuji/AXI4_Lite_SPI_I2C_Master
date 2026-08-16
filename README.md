@@ -16,10 +16,22 @@
 
 ## 🛠️ 개발 환경
 
-- Language: Verilog, C
-- Tool: Vivado, Vitis
-- Protocol: AMBA AXI4-Lite
-- Board: Basys3 (Xilinx Artix-7)
+<table>
+<tr><td><b>Language</b></td><td>
+<img src="https://img.shields.io/badge/-VERILOG-1E88E5?style=for-the-badge&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-FFC107?style=for-the-badge&logo=c&logoColor=white"/>
+</td></tr>
+<tr><td><b>Tool</b></td><td>
+<img src="https://img.shields.io/badge/VIVADO-006400?style=for-the-badge&logo=amd&logoColor=white"/>
+<img src="https://img.shields.io/badge/VITIS-004B87?style=for-the-badge&logo=amd&logoColor=white"/>
+</td></tr>
+<tr><td><b>Protocol</b></td><td>
+<img src="https://img.shields.io/badge/AXI4--LITE-0B1F3A?style=for-the-badge&logo=amd&logoColor=white"/>
+</td></tr>
+<tr><td><b>Board</b></td><td>
+<img src="https://img.shields.io/badge/BASYS3_(XILINX_ARTIX--7)-5BC0DE?style=for-the-badge&logo=amd&logoColor=white"/>
+</td></tr>
+</table>
 
 ---
 
