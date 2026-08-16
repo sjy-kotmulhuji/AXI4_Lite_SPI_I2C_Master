@@ -6,10 +6,11 @@
 
 ## 📌 프로젝트 개요
 
-- MicroBlaze CPU와 **AXI4-Lite** 프로토콜로 통신하는 **SPI Master / I2C Master IP** 설계
 - MicroBlaze 기반 **SoC 시스템** 구성 (Vivado Block Design)
+- MicroBlaze CPU와 **AXI4-Lite** 프로토콜로 통신하는 **SPI Master / I2C Master IP** 설계
 - **HAL 기반 Layered Architecture** C Firmware 구현
 - FPGA 보드를 이용한 Master – Slave 동작 검증
+- SPI 통신에 대한 UVM 구조 검증
 
 ---
 
