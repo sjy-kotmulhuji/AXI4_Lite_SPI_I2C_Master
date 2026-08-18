@@ -139,8 +139,8 @@
 ## Software 설계
 
 ### HAL 기반 Layered Architecture
-
-- **HAL (Hardware Abstraction Layer)** : Hardware와 OS 사이의 인터페이스 역할
+- Software 시스템을 관심사(기능)에 따라 여러 계층으로 분리하여 설계하는 방법
+- **HAL (Hardware Abstraction Layer)** : Hardware와 OS 사이의 인터페이스 역할을 하는 Software 계층
 - 상위 Software 계층이 하드웨어 동작을 신경 쓸 필요 없이 HAL 함수 호출만으로 동작 가능
 - 상위 계층은 바로 아래 계층에만 접근 가능
 
