@@ -140,6 +140,10 @@
 
 ### HAL 기반 Layered Architecture
 
+- **HAL (Hardware Abstraction Layer)** : Hardware와 OS 사이의 인터페이스 역할
+- 상위 Software 계층이 하드웨어 동작을 신경 쓸 필요 없이 HAL 함수 호출만으로 동작 가능
+- 상위 계층은 바로 아래 계층에만 접근 가능
+
 <img width="1563" height="758" alt="image" src="https://github.com/user-attachments/assets/e856cac6-094d-4582-a74c-b368430fb8a4" />
 
 | 계층 | 역할 |
@@ -148,9 +152,7 @@
 | **Driver** | 각 하드웨어 요소들의 개별 동작 구현 |
 | **HAL** | 하드웨어 레지스터에 직접 접근하는 함수 구현 |
 
-- **HAL (Hardware Abstraction Layer)** : Hardware와 OS 사이의 인터페이스 역할
-- 상위 Software 계층이 하드웨어 동작을 신경 쓸 필요 없이 HAL 함수 호출만으로 동작 가능
-- 상위 계층은 바로 아래 계층에만 접근 가능
+
 
 ---
 
