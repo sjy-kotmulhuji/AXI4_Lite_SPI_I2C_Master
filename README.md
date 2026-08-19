@@ -92,7 +92,6 @@
 | <img width="400" height="550" alt="image" src="https://github.com/user-attachments/assets/52049aca-5a18-46a7-b9b4-9b5b19915847" /> | <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/44b2d7ed-bec1-4725-a54d-5fb67f082bb3" /> |
 
 
-
 ---
 
 ## SoC 구성
@@ -113,16 +112,14 @@
 
 ## AXI SPI IP
 
-### 블록도 및 레지스터 구성
+### Block Diagram
 
-| Block Diagram | 레지스터 주소 맵핑 |
-|------|------|
-| <img width="2955" height="1082" alt="image" src="https://github.com/user-attachments/assets/71e1e5f8-c294-40b6-b36f-14512f3c2f29" /> | <img width="725" height="534" alt="image" src="https://github.com/user-attachments/assets/917e4d55-fa0c-44eb-9dfb-8bc32a2525a5" /> | 
+| Block Diagram 및 레지스터 주소 맵핑 |
+|------|
+| <img width="1215" height="474" alt="image" src="https://github.com/user-attachments/assets/813019e2-ef01-4db4-8ceb-ff484bc37a18" /> | 
 
 ### SoC 구성
 <img width="1810" height="811" alt="image" src="https://github.com/user-attachments/assets/87ecaa18-90a4-4f79-8788-651ca4436e6b" />
-
-
 
 ### GPIO 구성
 
@@ -139,12 +136,16 @@
 ## Software 설계
 
 ### HAL 기반 Layered Architecture
-- Software 시스템을 관심사(기능)에 따라 여러 계층으로 분리하여 설계하는 방법
+- Software 시스템을 **관심사(기능)** 에 따라 여러 계층으로 분리하여 설계하는 방법
 - **HAL (Hardware Abstraction Layer)** : Hardware와 OS 사이의 인터페이스 역할을 하는 Software 계층
 - 상위 Software 계층이 하드웨어 동작을 신경 쓸 필요 없이 HAL 함수 호출만으로 동작 가능
 - 상위 계층은 바로 아래 계층에만 접근 가능
 
-<img width="1563" height="758" alt="image" src="https://github.com/user-attachments/assets/e856cac6-094d-4582-a74c-b368430fb8a4" />
+| SPI Software 계층 구조 |
+|------|
+| <img width="663" height="328" alt="image" src="https://github.com/user-attachments/assets/e856cac6-094d-4582-a74c-b368430fb8a4" /> |
+
+**계층 별 역할**
 
 | 계층 | 역할 |
 |------|------|
@@ -152,21 +153,11 @@
 | **Driver** | 각 하드웨어 요소들의 개별 동작 구현 |
 | **HAL** | 하드웨어 레지스터에 직접 접근하는 함수 구현 |
 
-
-
 ---
 
-## AXI SPI
+### FPGA 데모 영상
 
-### Block Diagram
-
-<img width="1992" height="772" alt="image" src="https://github.com/user-attachments/assets/353eb4a7-1147-4448-b183-9329224c0df3" />
-
-
-### FPGA 동작 시연
-
-- **구성** : 2개의 Basys3 보드(Master/Slave)
-- **동작** : Master의 switch 0~7번 입력에 따른 8bit 데이터를 10진수 형태로 Slave의 FND에 출력
+https://github.com/user-attachments/assets/c0332eb1-d416-4c00-93da-54574db06e53
 
 ---
 
@@ -174,13 +165,25 @@
 
 ### Block Diagram
 
-<img width="1984" height="759" alt="image" src="https://github.com/user-attachments/assets/592a4e2f-b13d-49e6-b00c-3335fdb49242" />
+| Block Diagram 및 레지스터 주소 맵핑 |
+|------|
+| <img width="1992" height="772" alt="image" src="https://github.com/user-attachments/assets/353eb4a7-1147-4448-b183-9329224c0df3" /> | 
 
 
-### FPGA 동작 시연
+### SoC 구성
+<img width="903" height="456" alt="image" src="https://github.com/user-attachments/assets/397cb32f-37dd-4080-aef1-072a437f3d44" />
 
-- **구성** : 2개의 Basys3 보드(Master/Slave), Pull-up 저항
-- **동작** : Master의 switch 0~7번 입력에 따른 8bit 데이터를 Slave의 LED 0~7번에 출력
+
+### GPIO 구성
+
+| 포트 | 연결 |
+|------|------|
+| `GPIOA[7:0]` | switch[7:0] |
+| `GPIOB[7:0]` | LED[7:0] |
+| `GPIOC[7:0]` | fnd_data[7:0] |
+| `GPIOD[3:0]` | fnd_digit[3:0] |
+| `GPIOD[7:4]` | 상하좌우 Button |
+
 
 ---
 
