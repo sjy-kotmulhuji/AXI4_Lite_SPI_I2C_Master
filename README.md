@@ -1,3 +1,5 @@
+
+
 # 🚌 AXI4-Lite 기반 SoC 설계 및 UVM 검증
 
 > 온디바이스AI 시스템 반도체 설계 1기 | 송주연 | 대한상공회의소 서울기술교육센터 | 2026.05.08
@@ -199,7 +201,7 @@ https://github.com/user-attachments/assets/c0332eb1-d416-4c00-93da-54574db06e53
 
 ### FPGA 데모 영상
 
-
+https://github.com/user-attachments/assets/ca08216b-e776-4630-9610-6959718e62ab
 
 ---
 
@@ -215,11 +217,11 @@ https://github.com/user-attachments/assets/c0332eb1-d416-4c00-93da-54574db06e53
 
 ### 검증 결과
 
-| 항목 | 결과 |
+| 항목 | 결과 | 
 |------|------|
-| Scoreboard | `s_tx_data` ↔ `m_rx_data` 비교 일치 ✅ |
-| Coverage | `m_tx_data` / `s_rx_data` / `s_tx_data` / `m_rx_data` 전체 달성 ✅ |
-| Log | PASS ✅ |
+| **Waveform** | <img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/588df82e-d404-45eb-9b88-48cd16b747df" /> |
+| **Log** | <img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/d577efa8-714e-496f-964c-bf04f6bd1dd5" />|
+| **Coverage** | <img width="539" height="197" alt="image" src="https://github.com/user-attachments/assets/2a97d3de-8384-4746-ae18-5feaa87afd20" /> |
 
 ---
 
